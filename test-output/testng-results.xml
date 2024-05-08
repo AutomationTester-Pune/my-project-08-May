@@ -1,61 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-08T16:11:53 IST" name="Kiran Suite" finished-at="2024-05-08T16:12:23 IST" duration-ms="29939">
+  <suite started-at="2024-05-08T19:25:56 IST" name="Kiran Suite" finished-at="2024-05-08T19:26:28 IST" duration-ms="31322">
     <groups>
     </groups>
-    <test started-at="2024-05-08T16:11:53 IST" name="Kiran Test" finished-at="2024-05-08T16:12:23 IST" duration-ms="29939">
+    <test started-at="2024-05-08T19:25:56 IST" name="Kiran Test" finished-at="2024-05-08T19:26:28 IST" duration-ms="31322">
       <class name="testcases.TC_RegisterUser">
-        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:11:53 IST" name="launchSite" finished-at="2024-05-08T16:12:18 IST" duration-ms="24504" status="PASS">
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:25:56 IST" name="launchSite" finished-at="2024-05-08T19:26:07 IST" duration-ms="10365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSite -->
-        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:11:53 IST" name="launchSite" finished-at="2024-05-08T16:12:14 IST" duration-ms="20468" status="PASS">
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:25:56 IST" name="launchSite" finished-at="2024-05-08T19:26:08 IST" duration-ms="11829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSite -->
-        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:11:53 IST" name="launchSite" finished-at="2024-05-08T16:12:13 IST" duration-ms="19802" status="PASS">
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:25:56 IST" name="launchSite" finished-at="2024-05-08T19:26:07 IST" duration-ms="10294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSite -->
-        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:11:53 IST" name="launchSite" finished-at="2024-05-08T16:12:07 IST" duration-ms="13435" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSite -->
-        <test-method signature="verifyIfCanSignup()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:07 IST" name="verifyIfCanSignup" description="Positive scenario to verify if the user can use sign-up function" finished-at="2024-05-08T16:12:21 IST" duration-ms="13902" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIfCanSignup -->
-        <test-method signature="verifyValidationMessageForDuplicateEmail()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:13 IST" name="verifyValidationMessageForDuplicateEmail" description="Should display message &#039;Email Address already exist!" finished-at="2024-05-08T16:12:19 IST" duration-ms="5599" status="PASS">
+        <test-method signature="verifyValidationMessageForDuplicateEmail()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:26:07 IST" name="verifyValidationMessageForDuplicateEmail" description="Should display message &#039;Email Address already exist!" finished-at="2024-05-08T19:26:14 IST" duration-ms="7017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidationMessageForDuplicateEmail -->
-        <test-method signature="verifyNavigationToSignupPage()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:14 IST" name="verifyNavigationToSignupPage" description="Should navigate to the Signup page" finished-at="2024-05-08T16:12:18 IST" duration-ms="4095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationToSignupPage -->
-        <test-method signature="verifyIfCanGoToSignupPage()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:18 IST" name="verifyIfCanGoToSignupPage" description="Test the navigation to the sign up page" finished-at="2024-05-08T16:12:23 IST" duration-ms="5066" status="PASS">
+        <test-method signature="verifyIfCanGoToSignupPage()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:26:07 IST" name="verifyIfCanGoToSignupPage" description="Test the navigation to the sign up page" finished-at="2024-05-08T19:26:15 IST" duration-ms="8080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIfCanGoToSignupPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:18 IST" name="tearDown" finished-at="2024-05-08T16:12:18 IST" duration-ms="554" status="PASS">
+        <test-method signature="verifyNavigationToSignupPage()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:26:08 IST" name="verifyNavigationToSignupPage" description="Should navigate to the Signup page" finished-at="2024-05-08T19:26:10 IST" duration-ms="2094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToSignupPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:26:10 IST" name="tearDown" finished-at="2024-05-08T19:26:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:19 IST" name="tearDown" finished-at="2024-05-08T16:12:20 IST" duration-ms="990" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:26:14 IST" name="tearDown" finished-at="2024-05-08T19:26:14 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:21 IST" name="tearDown" finished-at="2024-05-08T16:12:21 IST" duration-ms="494" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@4310d43]" started-at="2024-05-08T16:12:23 IST" name="tearDown" finished-at="2024-05-08T16:12:23 IST" duration-ms="314" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RegisterUser@3c130745]" started-at="2024-05-08T19:26:15 IST" name="tearDown" finished-at="2024-05-08T19:26:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_RegisterUser -->
+      <class name="testcases.TC_Login">
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:testcases.TC_Login@76508ed1]" started-at="2024-05-08T19:25:56 IST" name="launchSite" finished-at="2024-05-08T19:26:09 IST" duration-ms="12903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="testLogin()[pri:0, instance:testcases.TC_Login@76508ed1]" started-at="2024-05-08T19:26:09 IST" name="testLogin" description="Check if the user can log in with the newly created password" finished-at="2024-05-08T19:26:28 IST" duration-ms="18357" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":" Logout"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [231339fc24116139ca8b9782b48f4196, findElement {using=link text, value= Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: /var/folders/q_/0s67wczn09x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60530/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 231339fc24116139ca8b9782b48f4196]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":" Logout"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [231339fc24116139ca8b9782b48f4196, findElement {using=link text, value= Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: /var/folders/q_/0s67wczn09x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60530/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 231339fc24116139ca8b9782b48f4196
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at testcases.TC_Login.testLogin(TC_Login.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_Login@76508ed1]" started-at="2024-05-08T19:26:28 IST" name="tearDown" finished-at="2024-05-08T19:26:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_Login -->
     </test> <!-- Kiran Test -->
   </suite> <!-- Kiran Suite -->
 </testng-results>

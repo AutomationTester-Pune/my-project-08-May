@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Kiran_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Kiran Suite</span>
+              <span class="suite-name border-failed">Kiran Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Kiran_Suite" class="navigator-link ">
-                    <span>D:\Kiran\my-automation-prac\using-jet-brains\project-1\testng.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Kiran_Suite" class="hide-methods failed suite-Kiran_Suite"> (hide)</a> <!-- hide-methods failed suite-Kiran_Suite -->
+                      <a href="#" panel-name="suite-Kiran_Suite" class="show-methods failed suite-Kiran_Suite"> (show)</a> <!-- show-methods failed suite-Kiran_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Kiran_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Kiran_Suite" title="testcases.TC_Login" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Kiran_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Kiran_Suite" title="testcases.TC_RegisterUser" class="method navigator-link" hash-for-method="verifyIfCanGoToSignupPage">verifyIfCanGoToSignupPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Kiran_Suite" title="testcases.TC_RegisterUser" class="method navigator-link" hash-for-method="verifyIfCanSignup">verifyIfCanSignup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,6 +142,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Kiran_Suite" class="panel Kiran_Suite">
+          <div class="suite-Kiran_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot; Logout&quot;}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.3&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [231339fc24116139ca8b9782b48f4196, findElement {using=link text, value= Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: /var/folders/q_/0s67wczn09x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60530/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 231339fc24116139ca8b9782b48f4196
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at testcases.TC_Login.testLogin(TC_Login.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check if the user can log in with the newly created password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Kiran_Suite-class-failed -->
           <div class="suite-Kiran_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -146,15 +200,6 @@
                   <span class="method-name">verifyIfCanGoToSignupPage</span>
                   <em>
 (Test the navigation to the sign up page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyIfCanSignup">
-                  </a> <!-- verifyIfCanSignup -->
-                  <span class="method-name">verifyIfCanSignup</span>
-                  <em>
-(Positive scenario to verify if the user can use sign-up function)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -180,7 +225,7 @@
         </div> <!-- panel Kiran_Suite -->
         <div panel-name="test-xml-Kiran_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Kiran\my-automation-prac\using-jet-brains\project-1\testng.xml</span>
+            <span class="header-content">/Users/kiranbandal/git/my-project-08-May/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -190,6 +235,7 @@
   &lt;test thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;Kiran Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TC_RegisterUser&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Kiran Test --&gt;
 &lt;/suite&gt; &lt;!-- Kiran Suite --&gt;
@@ -203,7 +249,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Kiran Test (1 class)</span>
+                <span class="test-name">Kiran Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,26 +277,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyIfCanSignup')
-data.setCell(0, 2, 'testcases.TC_RegisterUser')
-data.setCell(0, 3, 13902);
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'testcases.TC_Login')
+data.setCell(0, 3, 18357);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyValidationMessageForDuplicateEmail')
+data.setCell(1, 1, 'verifyIfCanGoToSignupPage')
 data.setCell(1, 2, 'testcases.TC_RegisterUser')
-data.setCell(1, 3, 5599);
+data.setCell(1, 3, 8080);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyIfCanGoToSignupPage')
+data.setCell(2, 1, 'verifyValidationMessageForDuplicateEmail')
 data.setCell(2, 2, 'testcases.TC_RegisterUser')
-data.setCell(2, 3, 5066);
+data.setCell(2, 3, 7017);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyNavigationToSignupPage')
 data.setCell(3, 2, 'testcases.TC_RegisterUser')
-data.setCell(3, 3, 4095);
+data.setCell(3, 3, 2094);
 window.suiteTableData['Kiran_Suite']= { tableData: data, tableDiv: 'times-div-Kiran_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Kiran_Suite">
               </div> <!-- times-div-Kiran_Suite -->
             </div> <!-- times-div -->
@@ -265,9 +311,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Kiran_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TC_RegisterUser</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyIfCanSignup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Kiran_Suite" class="panel">
@@ -276,6 +329,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_RegisterUser</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchSite</span>
@@ -283,47 +343,54 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">launchSite</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">launchSite</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">launchSite</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyIfCanSignup</span>
-                <span class="method-start">13436 ms</span>
-              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyValidationMessageForDuplicateEmail</span>
-                <span class="method-start">19803 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyNavigationToSignupPage</span>
-                <span class="method-start">20468 ms</span>
+                <span class="method-start">10300 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyIfCanGoToSignupPage</span>
-                <span class="method-start">24504 ms</span>
+                <span class="method-start">10366 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigationToSignupPage</span>
+                <span class="method-start">11830 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin</span>
+                <span class="method-start">12904 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_RegisterUser</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24574 ms</span>
+                <span class="method-start">13929 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25405 ms</span>
+                <span class="method-start">17320 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27343 ms</span>
+                <span class="method-start">18461 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_Login</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29571 ms</span>
+                <span class="method-start">31267 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
