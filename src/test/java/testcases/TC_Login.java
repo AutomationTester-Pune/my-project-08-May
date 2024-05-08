@@ -7,7 +7,8 @@ import org.testng.annotations.Test;
 
 import basetests.BaseTest;
 import basetests.DriverFactory;
-import reusablecomponents.CommonData;
+
+
 
 //Wed_May_08_18_36_01@gmail.com
 //pass@123
@@ -30,6 +31,9 @@ public class TC_Login extends BaseTest {
 		 
 		 DriverFactory.getInstance().getDriver()
          .findElement(By.xpath("//form[@action='/login']/button")).click();
+		 
+		 //WebElement elementTrimmed = 
+		 //driver.findElement(By.xpath("normalize-space(//div[contains(text(), 'Some Text')])"));
 		 
 		 WebElement logoutOption = DriverFactory.getInstance().getDriver()
          .findElement(By.linkText(" Logout"));
