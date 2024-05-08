@@ -104,6 +104,7 @@ public class TC_RegisterUser extends BaseTest {
 
         DriverFactory.getInstance().getDriver()
                 .findElement(By.id("password")).sendKeys("pass@123");
+        CommonData.loginPassword = "pass@123";
 
         DriverFactory.getInstance().getDriver()
                 .findElement(By.id("first_name")).sendKeys("James");
@@ -128,12 +129,17 @@ public class TC_RegisterUser extends BaseTest {
         DriverFactory.getInstance().getDriver()
                 .findElement(By.id("mobile_number")).sendKeys("7890312906");
 
+        DriverFactory.getInstance().getDriver()
+        .findElement(By.id("zipcode")).sendKeys("411058");
 
         DriverFactory.getInstance().getDriver()
                         .findElement(By.xpath("//button[text() = 'Create Account']")).click();
 
-        Thread.sleep(4000);
-
+        WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(12));
+        WebElement accountCreatedHeading = 
+        		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[@* = 'account-created']")));
+        
+        Assert.assertTrue(accountCreatedHeading.isDisplayed(), "Sign-up function failed");
     }
 
 }
