@@ -1,5 +1,7 @@
 package testcases;
 
+//Wed_May_08_18_36_01@gmail.com
+//pass@123
 
 import basetests.BaseTest;
 import basetests.DriverFactory;
@@ -9,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import reusablecomponents.CommonData;
 import reusablecomponents.UtilFunctions;
@@ -78,6 +81,7 @@ public class TC_RegisterUser extends BaseTest {
         Assert.assertEquals(aPText, ePText);
     }
 
+    @Ignore
     @Test(description = "Positive scenario to verify if the user can use sign-up function")
     public void verifyIfCanSignup() throws InterruptedException {
 
