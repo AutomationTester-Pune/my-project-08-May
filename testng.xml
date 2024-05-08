@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Kiran Suite" parallel="methods" thread-count="4">
-  <test name="Kiran Test">
+<suite name="My Suite" parallel="methods" thread-count="4">
+  <test name="My Test">
     <classes>
       <class name="testcases.TC_RegisterUser"/>
       <class name="testcases.TC_Login"/>
