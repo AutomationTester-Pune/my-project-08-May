@@ -13,7 +13,6 @@ public class BaseTest {
 
     @BeforeMethod
     public void launchSite() {
-
         DriverFactory.getInstance().setDriver(browserFactory.createBrowserInstance("chrome"));
         DriverFactory.getInstance().getDriver().manage().window().maximize();
         DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(12));

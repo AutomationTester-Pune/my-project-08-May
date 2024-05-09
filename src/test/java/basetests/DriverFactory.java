@@ -12,6 +12,7 @@ public class DriverFactory {
     }
 
     public static DriverFactory getInstance() {
+    	System.out.println("Returning the DriverFactory instance");
         return instance;
     }
 
