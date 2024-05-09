@@ -4,7 +4,7 @@ target/
 !**/src/test/**/target/
 
 # TestNG
-test-output/
+/test-output/
 
 ### Eclipse ###
 .apt_generated
@@ -14,7 +14,7 @@ test-output/
 .settings
 .springBeans
 .sts4-cache
-test-output/
+
 
 ### NetBeans ###
 /nbproject/private/
