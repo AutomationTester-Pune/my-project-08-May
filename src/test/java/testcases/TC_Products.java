@@ -62,17 +62,38 @@ public class TC_Products extends BaseTest {
 		DriverFactory.getInstance().getDriver().findElement(By.id("submit_search")).click();
 
 		DriverFactory.getInstance().getDriver().findElement(By.xpath("//div[@class='choose'][1]/ul/li/a")).click();
-		
 
 		WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(10));
 		WebElement qtyInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("quantity")));
-		qtyInput.clear(); qtyInput.sendKeys("4");
-		
-		DriverFactory.getInstance().getDriver().findElement(By.xpath("//button[@class='btn btn-default cart']")).click();
-		
-		WebElement addedToCartPopUp = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[text()='Added!']")));
-		Assert.assertTrue(addedToCartPopUp.isDisplayed());		
+		qtyInput.clear();
+		qtyInput.sendKeys("4");
 
+		DriverFactory.getInstance().getDriver().findElement(By.xpath("//button[@class='btn btn-default cart']"))
+				.click();
+
+		WebElement addedToCartPopUp = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[text()='Added!']")));
+		Assert.assertTrue(addedToCartPopUp.isDisplayed());
+
+	}
+
+	@Test
+	public void testIfAddToCartWorksTrickyAddtoCartOption() {
+
+		// click on Products link,
+		DriverFactory.getInstance().getDriver().findElement(By.xpath("//div[@class='shop-menu pull-right']/ul/li[2]/a"))
+				.click();
+
+		// Enter the valid search string "Jeans" in the search text box
+		DriverFactory.getInstance().getDriver().findElement(By.id("search_product")).sendKeys("Jeans");
+		DriverFactory.getInstance().getDriver().findElement(By.id("submit_search")).click();
+		
+		
+		 DriverFactory.getInstance().getDriver()
+		.findElement(By.linkText("Add to cart")).click();
+		
+
+		
 	}
 
 }
