@@ -9,8 +9,6 @@ public class BrowserFactory {
     public WebDriver createBrowserInstance(String browserName) {
     	
         WebDriver driver = null;
-
-        System.out.println("Receieved the browser name as " + browserName);
         
         if(browserName.equalsIgnoreCase("chrome")) {
         	System.out.println();
@@ -22,7 +20,6 @@ public class BrowserFactory {
             return driver;
         }
         
-        System.out.println("executing createBrowserInstance done");
         return  driver;
 
     }
